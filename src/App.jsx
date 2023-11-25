@@ -1,9 +1,7 @@
-import "./App.css";
-
 const App = () => {
   return (
     <div className="">
-      <p className="text-red-400">bc</p>
+      <p className="text-7xl">c</p>
     </div>
   );
 };
