@@ -1,9 +1,7 @@
-const App = () => {
+export default function App() {
   return (
-    <div className="">
-      <p className="text-7xl">c</p>
-    </div>
-  );
-};
-
-export default App;
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
