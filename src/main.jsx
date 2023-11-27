@@ -6,6 +6,6 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <p className="te">sd</p>
+    <p className="text-red-400">sd</p>
   </React.StrictMode>,
 );
