@@ -4,8 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <React.StrictMode className="dark:bg-black">
     <App />
-    <p className="text-red-400">sd</p>
   </React.StrictMode>,
 );
