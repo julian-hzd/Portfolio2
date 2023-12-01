@@ -1,3 +1,9 @@
 export default function Projects() {
-  return <h1>content</h1>;
+  console.log("PORHJS");
+  return (
+    <div>
+      <h1>content</h1>
+      <h1>content</h1>
+    </div>
+  );
 }
