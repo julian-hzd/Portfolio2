@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        hedvig: ["Hedvig Letters Serif", "sans-serif"],
+      },
+    },
   },
   plugins: [],
   darkMode: "class",

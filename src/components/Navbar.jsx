@@ -9,10 +9,10 @@ export default function Navbar() {
       <nav className="mt-10">
         <ul
           className="flex flex-wrap justify-center space-x-10 
-          text-xl text-sky-300"
+          text-xl text-sky-200"
         >
           <li>
-            <Link to={`home`} className={liHoveredColor}>
+            <Link to={`home`} className={`${liHoveredColor} text-3xl`}>
               ~
             </Link>
           </li>

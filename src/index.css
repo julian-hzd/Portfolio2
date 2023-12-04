@@ -1,4 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+
 @tailwind base;
+
+:root {
+  --primary: lightslategray;
+  --secondary: lightsteelblue;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  /* border-radius: 14px; */
+  border: 3px solid var(--primary);
+}
+
+::selection {
+  background: lightslategray;
+}
+
 @tailwind components;
 @tailwind utilities;
-
