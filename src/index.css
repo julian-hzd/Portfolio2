@@ -16,7 +16,7 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 18px;
+  width: 15px;
 }
 
 *::-webkit-scrollbar-track {
@@ -31,6 +31,10 @@
 
 ::selection {
   background: lightslategray;
+}
+
+.dark body {
+  background-color: #111;
 }
 
 @tailwind components;

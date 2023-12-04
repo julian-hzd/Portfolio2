@@ -3,6 +3,7 @@ import {
   RouterProvider,
   Route,
   createRoutesFromElements,
+  Navigate,
 } from "react-router-dom";
 
 import Projects from "./Projects";
@@ -17,6 +18,7 @@ export default function Router() {
       router={createBrowserRouter(
         createRoutesFromElements(
           <Route path="/" element={<Navbar />}>
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="home" element={<Home />} />
             <Route path="projects" element={<Projects />} />
             <Route path="about" element={<About />} />

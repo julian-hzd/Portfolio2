@@ -2,14 +2,14 @@ import { Link, Outlet } from "react-router-dom";
 
 export default function Navbar() {
   const liHoveredColor =
-    "hover:text-sky-600 hover:underline underline-offset-8";
+    "hover:text-red-300 hover:underline underline-offset-8";
 
   return (
     <div className="m-4">
       <nav className="mt-10">
         <ul
           className="flex flex-wrap justify-center space-x-10 
-          text-xl text-sky-200"
+          text-xl text-gray-200"
         >
           <li>
             <Link to={`home`} className={`${liHoveredColor} text-3xl`}>
