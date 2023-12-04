@@ -3,10 +3,13 @@ import { Link, Outlet } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <nav>
-        <ul>
+      <nav className="mt-10">
+        <ul
+          className="flex flex-wrap justify-center space-x-10 
+          text-2xl text-sky-200 hover:text-red-50"
+        >
           <li>
-            <Link to={`home`}>~</Link>
+            <Link to={`/`}>~</Link>
           </li>
           <li>
             <Link to={`projects`}>Projects</Link>
