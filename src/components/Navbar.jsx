@@ -1,17 +1,18 @@
 import { Link, Outlet } from "react-router-dom";
 
 export default function Navbar() {
-  const liHoveredColor = "hover:text-red-400";
+  const liHoveredColor =
+    "hover:text-sky-600 hover:underline underline-offset-8";
 
   return (
-    <>
+    <div className="m-4">
       <nav className="mt-10">
         <ul
           className="flex flex-wrap justify-center space-x-10 
-          text-2xl text-sky-200 [&_li]:text-red-200"
+          text-xl text-sky-300"
         >
           <li>
-            <Link to={`/`} className={liHoveredColor}>
+            <Link to={`home`} className={liHoveredColor}>
               ~
             </Link>
           </li>
@@ -34,7 +35,8 @@ export default function Navbar() {
       </nav>
       <div>
         <Outlet />
+        <h1>Footer</h1>
       </div>
-    </>
+    </div>
   );
 }
