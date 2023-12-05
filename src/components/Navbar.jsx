@@ -22,11 +22,6 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to={`about`} className={liHoveredColor}>
-              About
-            </Link>
-          </li>
-          <li>
             <Link to={`contact`} className={liHoveredColor}>
               Contact me
             </Link>
@@ -35,7 +30,6 @@ export default function Navbar() {
       </nav>
       <div>
         <Outlet />
-        <h1>Footer</h1>
       </div>
     </div>
   );

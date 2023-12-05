@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <p className="text-2xl leading-loose">
           I'm Julian Hernandez a Computer Science graduate passionate about
-          Software Development seeking adventures. Feel free to check out the
+          Software Development, seeking adventures. Feel free to check out the
           <Link to={`/projects`} className={`${linkText}`}>
             {" "}
             projects{" "}
