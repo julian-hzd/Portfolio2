@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const linkText = "text-red-300 hover:text-red-400";
   return (
-    <div className="mt-20 flex flex-wrap justify-center">
-      <div className="w-3/6">
+    <div className="flex flex-wrap justify-center">
+      <div className="w-3/6 ">
         <h1 className="mb-8 text-6xl text-left text-gray-400">
           <Link to={`/home`} className="hover:text-gray-300">
             Welcome!
