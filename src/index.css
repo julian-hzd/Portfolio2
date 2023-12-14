@@ -33,9 +33,5 @@
   background: lightslategray;
 }
 
-body {
-  background-color: #111;
-}
-
 @tailwind components;
 @tailwind utilities;
