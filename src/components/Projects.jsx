@@ -11,7 +11,7 @@ export default function Projects() {
             href="https://github.com/julian-hzd/the-legend-game"
             target="_blank"
             rel="noreferrer"
-            className="text-2xl text-yellow-100"
+            className="text-2xl text-yellow-100 "
           >
             The Legend
           </a>

@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div className="flex flex-wrap justify-center">
       <div className="w-3/6 drop-shadow-2xl">
-        <h1 className="mb-8 text-6xl text-left text-zinc-50">
+        <h1 className="mb-8 text-7xl text-left text-zinc-50">
           <Link to={`/home`} className="hover:text-zinc-300">
             Welcome!
           </Link>
         </h1>
-        <p className="text-2xl leading-loose">
+        <p className="text-3xl leading-loose">
           I&apos;m{" "}
           <span className="text-red-200 hover:text-red-100">
             Julian Hernandez
