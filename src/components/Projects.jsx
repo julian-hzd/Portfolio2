@@ -14,7 +14,7 @@ export default function Projects() {
       {displayImg && <ShowProject image={game} CloseImage={CloseImage} />}
       <div className="flex flex-wrap justify-center w-full space-x-20 ">
         <div
-          className="border-double border-4 border-zinc-500 p-7 "
+          className="border-double border-4 border-zinc-500 p-7 hover:bg-gray-800 cursor-pointer"
           id="game-ss.png"
           onClick={() => {
             setDisplayImg(game);
