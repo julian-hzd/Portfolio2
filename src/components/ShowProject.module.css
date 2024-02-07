@@ -19,8 +19,10 @@
   border: 3px solid #eeedeb;
 }
 
-.header {
-  /* padding: 1rem; */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header h2 {

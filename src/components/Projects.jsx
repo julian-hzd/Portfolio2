@@ -4,23 +4,26 @@ import projects from "../Data/projects.js";
 
 export default function Projects() {
   const [displayImg, setDisplayImg] = useState();
+  // Add more projects,
+  // MAUI Farm containers app
+  // Budget thing
+  // etc...
 
   const CloseImage = () => {
     setDisplayImg(null);
   };
+  let clickedRepo = false;
   return (
     <>
       {displayImg && <ShowProject image={displayImg} CloseImage={CloseImage} />}
       {projects.map((project) => {
         return (
-          <div
-            className="flex flex-wrap justify-center w-full space-x-20 "
-            key={project.title}
-          >
+          <div className="flex flex-wrap justify-center" key={project.title}>
             <div
-              className="border-double border-4 border-zinc-500 p-7 hover:bg-gray-800 cursor-pointer"
+              className="border-double border-4 border-zinc-500 p-7 hover:bg-gray-800 cursor-pointer w-1/6"
               onClick={() => {
-                setDisplayImg(project.image);
+                if (!clickedRepo) setDisplayImg(project.image);
+                else clickedRepo = false;
               }}
             >
               <div className="">
@@ -37,9 +40,20 @@ export default function Projects() {
                 </p>
               </div>
               <div className="flex flex-wrap justify-center items-center space-x-5">
-                <button className="border-2 my-4 bg-zinc-700">&lt; &gt;</button>
-                <img src={project.languages}></img>
+                {project.technologies.map((lang) => {
+                  return <img src={lang} key={lang}></img>;
+                })}
               </div>
+              <a
+                href={project.git}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => {
+                  clickedRepo = true;
+                }}
+              >
+                <button className="border-2 my-4 bg-zinc-700">&lt;/&gt;</button>
+              </a>
             </div>
           </div>
         );

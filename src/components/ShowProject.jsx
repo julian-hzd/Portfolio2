@@ -7,7 +7,7 @@ export default function ShowProject({ image, CloseImage }) {
   );
   const OverLay = () => (
     <div className={styles.modal}>
-      <img className={styles.header} src={image} />
+      <img className={styles.img} src={image} />
     </div>
   );
   return (
