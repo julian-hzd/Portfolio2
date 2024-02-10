@@ -1,9 +1,10 @@
 const projects = [
   {
     title: "IoT Subsystems",
-    description: "abc",
+    description:
+      "Mobile container farm application consisting of Plant, Security and Geolocation subsystems with the ability to control acuators and reading of sensors attached to Raspberry Pi reTerminal.",
     image: "",
-    technologies: ["/c.svg", "python.svg", "azure.svg"],
+    technologies: ["/c.svg", "python.svg", "azure.svg", "shadow.png"],
     git: "https://github.com/jac-final-project-w23/course-project-jnj-solutions.git",
     colors: "green",
   },
