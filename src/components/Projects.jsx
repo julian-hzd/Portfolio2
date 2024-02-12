@@ -30,15 +30,8 @@ export default function Projects() {
                   else clickedRepo = false;
                 }}
               >
-                <div className="">
-                  <a
-                    href="https://github.com/julian-hzd/the-legend-game"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-2xl text-yellow-100 "
-                  >
-                    {project.title}
-                  </a>
+                <div className="h-4/6">
+                  <p className="text-2xl text-yellow-100 ">{project.title}</p>
                   <p className="italic mt-4 text-zinc-300">
                     {project.description}
                   </p>
@@ -47,19 +40,19 @@ export default function Projects() {
                   {project.technologies.map((lang) => {
                     return <img src={lang} key={lang}></img>;
                   })}
+                  <a
+                    href={project.git}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => {
+                      clickedRepo = true;
+                    }}
+                  >
+                    <button className="border-2 my-4 bg-zinc-700">
+                      &lt;Code /&gt;
+                    </button>
+                  </a>
                 </div>
-                <a
-                  href={project.git}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={() => {
-                    clickedRepo = true;
-                  }}
-                >
-                  <button className="border-2 my-4 bg-zinc-700">
-                    &lt;/&gt;
-                  </button>
-                </a>
               </div>
             </div>
           );

@@ -10,7 +10,8 @@ const projects = [
   },
   {
     title: "The Legend",
-    description: "Platformer Game",
+    description:
+      "2D Aventure platformer game. The legend should strive to survive and overcome his enemies.",
     image: "/game-ss.png",
     technologies: ["/js.svg"],
     git: "https://github.com/julian-hzd/the-legend-game.git",
@@ -18,7 +19,7 @@ const projects = [
   },
   {
     title: "Famerverse",
-    description: "Inventory management and general farming aid for farmers",
+    description: "Inventory management and general farming aid for farmers.",
     image: "/famerverse.png",
     technologies: ["/java.svg", "android.svg"],
     git: "https://github.com/julian-hzd/Project-Farmerverse.git",
